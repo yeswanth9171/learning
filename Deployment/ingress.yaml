@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: myapp-ingress
+spec:
+  rules:
+  - host: "my-local.localhost"
+    http:
+      paths:
+      - path: /solr
+        pathType: Prefix
+        backend:
+          service:
+            name: solr-service
+            port:
+              number: 8089
+         
