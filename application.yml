@@ -8,6 +8,7 @@ spec:
   
   source:
     repoURL: https://github.com/yeswanth9171/learning.git
+    targetRevision: HEAD
     path: Deployment
   destination:
     server: https://kubernetes.default.svc
