@@ -9,7 +9,7 @@ spec:
   - host: "my-local.localhost"
     http:
       paths:
-      - path: /solr
+      - path: /solrservice
         pathType: Prefix
         backend:
           service:
