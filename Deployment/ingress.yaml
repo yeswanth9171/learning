@@ -15,5 +15,5 @@ spec:
           service:
             name: solr-service
             port:
-              number: 8089
+              number: 8087
          
