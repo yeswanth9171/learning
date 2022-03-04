@@ -25,6 +25,11 @@ spec:
         image: solr
         ports:
         - containerPort: 8983
+        livenessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 15
+          periodSeconds: 20
 
 ---
 apiVersion: v1
