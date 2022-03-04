@@ -27,7 +27,7 @@ spec:
         - containerPort: 8983
         livenessProbe:
           tcpSocket:
-            port: 8981
+            port: 8983
           initialDelaySeconds: 5
           periodSeconds: 10
 
