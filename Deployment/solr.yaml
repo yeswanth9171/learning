@@ -28,8 +28,8 @@ spec:
         livenessProbe:
           tcpSocket:
             port: 8981
-          initialDelaySeconds: 15
-          periodSeconds: 20
+          initialDelaySeconds: 5
+          periodSeconds: 10
 
 ---
 apiVersion: v1
